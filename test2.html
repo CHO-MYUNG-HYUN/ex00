@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Test 2 Html</h1>
+  <hr>
+
+  <div>
+    <h2 id="show"></h2>
+  </div>
+
+  <div>
+    <button id="incBtn">INC</button>
+    <button id="decBtn">DEC</button>
+  </div>
+
+  <script>
+
+    function Nums (){
+
+      let num = 1
+
+      function inc () {
+        num += 1
+        console.log("inc")
+      }
+
+      function dec (){
+        num -= 1
+        console.log("dec")
+      }
+
+      return {inc:inc, dec:dec}
+
+    }
+
+    const obj1 = Nums()
+
+    console.log(obj1)
+    obj1.inc()
+    obj1.dec()
+
+    // let num = 1
+
+    // function inc() {
+    //   num += 1
+    // }
+
+    // function dec() {
+    //   num -= 1
+    // }
+
+    // document.querySelector("#incBtn").addEventListener("click", e => { 
+    //   inc()
+    //   rerender() 
+    // }, false)
+
+    // function rerender() {
+    //   document.querySelector("#show").innerHTML = num
+    // }
+  </script>
+</body>
+
+</html>
